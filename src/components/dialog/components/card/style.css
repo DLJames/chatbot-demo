@@ -1,0 +1,45 @@
+.card {
+  border-bottom: 1px dashed #DDDDDD;
+  padding: 0 0 1rem;
+}
+
+.card:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card h1 {
+  font-size: 16px !important;
+}
+
+.card table {
+  max-width: 420px !important;
+}
+
+.card .card-actions a {
+  cursor: pointer;
+  color: #009688;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}

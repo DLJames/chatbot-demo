@@ -1,0 +1,15 @@
+@import "../../assets/lib/chat-ui/chat-ui.css";
+
+#chat-ui-header {
+  background-color: #020c15;
+}
+
+#chat-ui-header .chat-ui-header__image {
+  width: 140px;
+  background: url(../../assets/images/Watson_Avatar_Ambient-square-071817-homepage.gif) no-repeat -20px -10px;
+}
+
+#chat-ui-header .chat-ui-header__cell_title {
+  position: relative;
+  left: -45px;
+}

@@ -1,0 +1,13 @@
+#login {
+  width: 300px;
+  margin: 10% auto;
+  background-color: #A1887F;
+  padding: 3rem 2rem;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+}

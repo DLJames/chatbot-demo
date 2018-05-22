@@ -1,0 +1,53 @@
+.robot-logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  background: url(../../assets/images/robot.png) no-repeat 0 0;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.robot-logo::before,
+.robot-logo::after {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 50px;
+  display: inline-block;
+  content: '';
+  top: 44px;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background: orangered;
+  -webkit-animation: pulse 3s linear infinite;
+          animation: pulse 3s linear infinite;
+  opacity: 0;
+  z-index: 10;
+}
+
+.robot-logo::after {
+  -webkit-animation: pulse 2.5s linear 2s infinite;
+          animation: pulse 2.5s linear 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: .2;
+  }
+  50% {
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
