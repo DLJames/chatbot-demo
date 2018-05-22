@@ -6,6 +6,11 @@
     props: ['url', 'title', 'content'],
     mounted () {
       this.$refs.content.innerHTML = this.content
+    },
+    methods: {
+      test() {
+        alert(1)
+      }
     }
   }
 </script>
